@@ -1,0 +1,13 @@
+/venv
+*.xlsx
+*.jpg
+*.mov
+*.mp3
+*.mp4
+*.ogg
+*.pdf
+*.png
+*.pptx
+*.txt
+*.docx
+!requirements.txt
