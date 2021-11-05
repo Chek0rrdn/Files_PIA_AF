@@ -1,3 +1,6 @@
+import random
+
+
 mensaje = """
 
 
@@ -34,11 +37,38 @@ Praesent ac lorem vitae sem pellentesque efficitur. Morbi vel accumsan enim. Don
 
 """
 
+nombres = (
+    'Final_Poo_nota_',
+    'Labs_POO_nota_',
+    'Telecomunicaciones1_nota_',
+    'Telecomunicaiones2_nota_',
+    'lab_Tele3_nota_',
+    'lab_tele4_nota_',
+    'Programacion1_nota_',
+    'IngenierriaaSocial_nota_',
+    'SistemasOperativaos_nota_',
+    'SDS_nota_',
+    'segBasesDatos_nota_',
+    'BasesDatos_nota_',
+    'SEGA_nota_',
+    'LabSEGA_nota_',
+    'Coco_nota_',
+    'Criptografia_nota_',
+    'DiseñoArquitecturas_nota_',
+    'NTSI_nota_',
+    'SegCompNube_nota_'
+)
+
+def elegir_materia():
+    materia = random.choice(nombres)
+    materia.encode()
+    return materia
 
 def main():
 	for iterable in range(1, 51):
 		
-		titulo_txt = "documentt_"+str(iterable)+".txt"
+		titulo_txt = elegir_materia()
+		titulo_txt = titulo_txt+str(iterable)+".txt"
 		
 		with open(titulo_txt, "w") as archivo:
 			archivo.write(mensaje*30)	

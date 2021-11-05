@@ -1,9 +1,37 @@
 #CREAR 251 ARCHIVOS PDF#
-import itertools
+import itertools, random
 from random import randint
 from statistics import mean
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
+
+
+nombres = (
+    'Final_Poo_tarea_',
+    'Labs_POO_tarea_',
+    'Telecomunicaciones1_tarea_',
+    'Telecomunicaiones2_tarea_',
+    'lab_Tele3_tarea_',
+    'lab_tele4_tarea_',
+    'Programacion1_tarea_',
+    'IngenierriaaSocial_tarea_',
+    'SistemasOperativaos_tarea_',
+    'SDS_tarea_',
+    'segBasesDatos_tarea_',
+    'BasesDatos_tarea_',
+    'SEGA_tarea_',
+    'LabSEGA_tarea_',
+    'Coco_tarea_',
+    'Criptografia_tarea_',
+    'DiseñoArquitecturas_tarea_',
+    'NTSI_tarea_',
+    'SegCompNube_tarea_'
+)
+
+def elegir_materia():
+    materia = random.choice(nombres)
+    materia.encode()
+    return materia
 
 
 def main():
@@ -15,7 +43,9 @@ def main():
 
         def export_to_pdf(data):
 
-            titulo_pdf = "pidiefAFFcFm_"+str(iteracion)+".pdf"
+            titulo_pdf = elegir_materia()
+            titulo_pdf = titulo_pdf+str(iteracion)+".pdf"
+
             c = canvas.Canvas(titulo_pdf, pagesize=A4)
             w,h = A4
             max_rows_per_page = 45
