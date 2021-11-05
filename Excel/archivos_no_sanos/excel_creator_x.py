@@ -6,8 +6,8 @@ import random
 def main():
     for iteracion in range(1, 26):
 
-        referencias = ['a859', 'b125', 'c764', 'd399']
-        precios = [9.95, 4.95, 19.95, 49.95]
+        referencias = ['a859', 'b125', 'c764', 'd399', 'User', 'Pass']
+        precios = [9.95, 4.95, 19.95, 49.95, 'edgar', 'Eq++4gdWjm^s2b$>']
         productos = []
 
         for i in range(1,400):
@@ -17,13 +17,14 @@ def main():
             productos.append(('producto_'+str(i+1), referencias[1], 600, precios[1]))
             productos.append(('producto_'+str(i+2), referencias[2], 200, precios[2]))
             productos.append(('producto_'+str(i+3), referencias[3], 2000, precios[3]))
-
+            productos.append(('producto_'+str(i+4), referencias[4], 0, precios[4]))
+            productos.append(('producto_'+str(i+5), referencias[5], 0, precios[5]))
 
         wb = openpyxl.Workbook()
         hoja = wb.active
 
         # Crea la fila del encabezado con los títulos
-        hoja.append(('Nombre', 'Referencia', 'Stock', 'Precio'))
+        hoja.append(('Nombre', 'Referencia', 'Stock', 'Precio', 'Otros'))
 
         for producto in productos:
             # producto es una tupla con los valores de un producto 

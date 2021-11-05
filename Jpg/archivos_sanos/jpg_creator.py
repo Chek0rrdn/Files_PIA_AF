@@ -1,16 +1,14 @@
 #CREAR 50 IMAGENES#
+import os, random
 import shutil
-from PIL import Image
-
 
 def main():
-
-    im = Image.open('archivo.PNG')
-    imagen = im.convert('RGB')
-    imagen.save('imagenjotapege.jpg', quality=95)
-
-    for iterador in range(1, 51):
-        shutil.copy2('imagenjotapege.jpg', f'imagenjotapege_{iterador}.jpg')
+    ruta = "/home/edgar/Dev/Files_PIA_AF/Jpg/archivos_sanos"
+    archivos = os.listdir(ruta)
+    
+    for i in range(1, 60):    
+        imagen_seleccionado = random.choice(archivos)
+        shutil.copy2(imagen_seleccionado, f'imagen_seleccionado_{i}.jpg')
 
 if __name__ == '__main__':
 	main()
