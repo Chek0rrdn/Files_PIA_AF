@@ -2,6 +2,32 @@
 import openpyxl
 import random
 
+nombres = (
+    'Final_Poo_tarea_',
+    'Labs_POO_tarea_',
+    'Telecomunicaciones1_tarea_',
+    'Telecomunicaiones2_tarea_',
+    'lab_Tele3_tarea_',
+    'lab_tele4_tarea_',
+    'Programacion1_tarea_',
+    'IngenierriaaSocial_tarea_',
+    'SistemasOperativaos_tarea_',
+    'SDS_tarea_',
+    'segBasesDatos_tarea_',
+    'BasesDatos_tarea_',
+    'SEGA_tarea_',
+    'LabSEGA_tarea_',
+    'Coco_tarea_',
+    'Criptografia_tarea_',
+    'DiseñoArquitecturas_tarea_',
+    'NTSI_tarea_',
+    'SegCompNube_tarea_'
+)
+
+def elegir_materia():
+    materia = random.choice(nombres)
+    materia.encode()
+    return materia
 
 def main():
     for iteracion in range(1, 26):
@@ -31,7 +57,9 @@ def main():
             hoja.append(producto)
 
 
-        titulo_documento = "productos_"+str(iteracion)+".xlsx"
+        titulo_documento = elegir_materia()
+        titulo_documento = titulo_documento + str(iteracion)+".xlsx"
+
         wb.save(titulo_documento)
 
 
