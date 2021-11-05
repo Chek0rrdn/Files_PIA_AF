@@ -1,10 +1,14 @@
 #CREAR 50 IMAGENES#
+import os, random
 import shutil
 
 def main():
 
-    for iterador in range(1, 51):
-        shutil.copy2('imagenpenege.PNG', f'imagenpenege_{iterador}.PNG')
+    archivos = os.listdir('./imagenes')
+    
+    for i in range(1, 51):    
+        imagen_seleccionado = random.choice(archivos)
+        shutil.copy2(f'./imagenes/{imagen_seleccionado}', f'imagen_seleccionado_{i}.png')
 
 if __name__ == '__main__':
 	main()
