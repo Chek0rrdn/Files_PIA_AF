@@ -23,7 +23,6 @@ def elegir_cancion():
 
 
 def main():
-    ruta = "./cancion/Carry_On.mp3"
     
     for i in range(1, 51):    
         cancion_seleccionada = elegir_cancion()
