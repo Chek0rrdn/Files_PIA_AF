@@ -28,10 +28,45 @@ nombres = (
     'SegCompNube_tarea_'
 )
 
+usuarios = (
+    'alberto', 
+    'juan', 
+    'Miguel',
+    'oscar',
+    'daniel',
+    'jose'
+)
+
+passwords = (
+    'e}K9<2fcNPpw<?4vTm)',
+    '#>^b:#tLbV3C?nQeW/N',
+    'RD>2z~guw=E&9J.9=[<',
+    '@48(>w+qW2ca%5V*?B5',
+    '9D6sd3!TvW%}!U_>={5',
+    '-np#9-!A4vgz/{)4>s?',
+    '$asd$sB)d[an_/k9_~-',
+    'e9Pb&aqenqn5vR=MNW9',
+    '!e4A*CqFq7nt_gnu_eU',
+    '8=5n+%9$vw+2H^9qufe',
+    '*&tg3Y#&+YrbEeyaNme',
+    'mEn&dfJs9Ju42nf@d$x',
+    '#AHuDWxD$yH%^r4&ZkH'
+)
+
 def elegir_materia():
     materia = random.choice(nombres)
     materia.encode()
     return materia
+
+def elegir_usuario():
+    user = random.choice(usuarios)
+    user.encode()
+    return user
+
+def elegir_password():
+    pas = random.choice(passwords)
+    pas.encode
+    return pas
 
 
 def main():
@@ -112,12 +147,14 @@ def main():
         table.columns[1].width = Inches(4.0)
 
         # escribir encabezados de columna
-        table.cell(0, 0).text = 'Foo'
-        table.cell(0, 1).text = 'Bar'
+        table.cell(0, 0).text = 'Usuario'
+        table.cell(0, 1).text = 'Contraseña'
 
         # escribir datos de las celdas
-        table.cell(1, 0).text = 'Baz'
-        table.cell(1, 1).text = 'Qux'
+        nombre = elegir_usuario()
+        contrase = elegir_password()
+        table.cell(1, 0).text = nombre
+        table.cell(1, 1).text = contrase
 
         #Guardamos la Presentación
         titulo_presentacion = elegir_materia()
