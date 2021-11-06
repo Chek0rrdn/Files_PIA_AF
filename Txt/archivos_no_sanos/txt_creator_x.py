@@ -113,11 +113,7 @@ def elegir_materia():
     materia.encode()
     return materia
 
-def elegir_tarjeta():
-	# for elemento in tarjetas:
-	# 	for k,v in elemento.items():
-	# 		pass
-	
+def elegir_tarjeta():	
 	aleatorio = random.choice(tarjetas)
 
 	aleatorio = str(aleatorio)
