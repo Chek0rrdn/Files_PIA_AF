@@ -1,6 +1,5 @@
 #CREAR 25 ARCHIVOS WORD#
 import random, os
-import shutil
 from docx import Document
 from docx.shared import Cm
 
