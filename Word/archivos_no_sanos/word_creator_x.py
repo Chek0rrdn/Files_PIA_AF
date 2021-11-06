@@ -79,14 +79,16 @@ def main():
             row_cells[1].text = str(numbr)
 
 
-        document.add_paragraph('Credit Card')
-        document.add_paragraph('CVV')
         p = document.add_paragraph()
         r2 = p.add_run()
+
+        document.add_paragraph('Credit Card')
+        document.add_paragraph('CVV')
 
         archivos = os.listdir('./imgs')
         imagen_seleccionado = random.choice(archivos)
 
+        r2.add_picture(f'./imgs/{imagen_seleccionado}')
         r2.add_picture(f'./imgs/{imagen_seleccionado}')
 
 
