@@ -1,5 +1,6 @@
 #CREAR 25 ARCHIVOS WORD#
-import random
+import random, os
+import shutil
 from docx import Document
 from docx.shared import Cm
 
@@ -76,6 +77,18 @@ def main():
             row_cells = table.add_row().cells
             row_cells[0].text = prod
             row_cells[1].text = str(numbr)
+
+
+        document.add_paragraph('Credit Card')
+        document.add_paragraph('CVV')
+        p = document.add_paragraph()
+        r2 = p.add_run()
+
+        archivos = os.listdir('./imgs')
+        imagen_seleccionado = random.choice(archivos)
+
+        r2.add_picture(f'./imgs/{imagen_seleccionado}')
+
 
         nombre_documento = elegir_materia()
         nombre_documento = nombre_documento + str(iteracion)+".docx"
