@@ -31,12 +31,14 @@ def elegir_materia():
     return materia
 
 def main():
-    for iteracion in range(1, 101):
-        # Creación del documento
+    f = open('chanchuyo.txt', 'w')
+    contador = 1
+    while contador < 101:
+         # Creación del documento
         document = Document()
 
         # Añadimos un titulo al documento, a nivel 0
-        titulo_documento = "Documento"+str(iteracion)+" creado con Python"
+        titulo_documento = "Documento"+str(contador)+" creado con Python"
         document.add_heading(titulo_documento, 0)
 
         # Añadimos un párrafo
@@ -78,9 +80,15 @@ def main():
             row_cells[1].text = str(numbr)
 
         nombre_documento = elegir_materia()
-        nombre_documento = nombre_documento + str(iteracion)+".docx"
+        nombre_documento = nombre_documento + str(contador)+".docx"
+
+        f.write(f'un Documento licito es: {nombre_documento}\n')
 
         document.save(nombre_documento)
+
+        contador += 1
+
+    f.close
 
 
 if __name__ == '__main__':
