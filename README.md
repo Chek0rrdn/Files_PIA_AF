@@ -7,4 +7,4 @@
 - **Nombre:** Edgar Pérez
 
 Scripts para la creacion de archivos del proyecto de la materia de Análisis Forense.
-Los archivos archivos creados en este proyecto de generan de manera aleatoria con la finalidad de no repetir nombres entre ellos.
+Los archivos creados en este proyecto se generan de manera aleatoria con la finalidad de no repetir nombres entre ellos.
