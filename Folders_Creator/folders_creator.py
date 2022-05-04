@@ -1,5 +1,9 @@
 #CREAR 30 CARPETAS Y 10 OCULTAS
-import os, random
+import os
+import pathlib
+import random
+
+CURRENT_DIR = pathlib.Path().resolve()
 
 materias = (
     'POO',
@@ -37,8 +41,11 @@ materias = (
 
 def main():
     
+    if not CURRENT_DIR.joinpath("carpetas").exists():
+        CURRENT_DIR.joinpath("carpetas").mkdir()
+
     for i in materias:
-        os.mkdir(f'./carpetas/{i}')
+        os.mkdir(CURRENT_DIR.joinpath("carpetas", f"{i}"))
 
     f = open('chanchuyo.txt', 'w')
 
@@ -47,15 +54,15 @@ def main():
         carp_oculta = random.choice(materias)
 
         try:
-            if os.path.isdir(f'./carpetas/{carp_oculta}/.top_secret'):
-                print(f'la carpteta {carp_oculta}/.top_secret YA existe')
+            if os.path.isdir(CURRENT_DIR.joinpath("carpetas", f"{carp_oculta}", ".top_secret")):
+                print(f"la carpteta {carp_oculta}/.top_secret YA existe")
             else:
-                os.mkdir(f'./carpetas/{carp_oculta}/.top_secret')
-                f.write(f'La carpeta Oculta se guardo en {carp_oculta}\n')
+                os.mkdir(CURRENT_DIR.joinpath("carpetas", f"{carp_oculta}", ".top_secret"))
+                f.write(f"La carpeta Oculta se guardo en {carp_oculta}\n")
                 contador += 1
 
         except ValueError as ve:
-            print(ve)        
+            print(ve)   
     
     f.close()
 
