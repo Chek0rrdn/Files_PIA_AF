@@ -3,25 +3,13 @@ import openpyxl
 import random
 
 nombres = (
-    'Final_Poo_tarea_',
-    'Labs_POO_tarea_',
-    'Telecomunicaciones1_tarea_',
-    'Telecomunicaiones2_tarea_',
-    'lab_Tele3_tarea_',
-    'lab_tele4_tarea_',
-    'Programacion1_tarea_',
-    'IngenierriaaSocial_tarea_',
-    'SistemasOperativaos_tarea_',
-    'SDS_tarea_',
-    'segBasesDatos_tarea_',
-    'BasesDatos_tarea_',
-    'SEGA_tarea_',
-    'LabSEGA_tarea_',
-    'Coco_tarea_',
-    'Criptografia_tarea_',
-    'DiseñoArquitecturas_tarea_',
-    'NTSI_tarea_',
-    'SegCompNube_tarea_'
+    "RecetaPaciente_","RecetaLab._","Nota_",
+    "HistoriaClinica_","ResumenDeCaso_","Pedidos_",
+    "ListaMedica_","Medicamentos_","Antibioticos_",
+    "FormatoHist.Clinica_","ListaEstServicioSoc","Estudiantes_",
+    "ListEnfermeras_","Nomina_","Presupuestos_",
+    "ListadoHerramientas_","ListaInstrumentos_","PedidosMeds_",
+    "PedidosMateriales_","Materiales_"
 )
 
 def elegir_materia():

@@ -15,7 +15,6 @@ def main():
         outputFile = f'{word_seleccionado}.pdf'
         file = open(outputFile, "w")
         file.close()
-
         convert(inputFile, outputFile)
 
 
