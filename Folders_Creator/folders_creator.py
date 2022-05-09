@@ -6,12 +6,12 @@ import random
 CURRENT_DIR = pathlib.Path().resolve()
 
 materias = (
-    "HistoriasClinicas","ResumensDeCasos","Pedidos",
-    "ListaMedica","Medicamentos","Antibioticos",
-    "FormatoHist.Clinica","ListaEstServicioSoc","Estudiantes",
-    "ListEnfermeras","Nominas","Presupuestos",
-    "ListadoHerramientas","ListasInstrumentos","PedidosMeds",
-    "PedidosMateriales","Materiales"
+    "Antibioticos","Estudiantes","FormatoHist.Clinica","Formatos","HistoriasClinicas",
+    "Hists.Clinicas","Hospitales","Instrumentales","ListadoHerramientas","ListaEstServicioSoc",
+    "ListaFormatos","ListaMedica","ListaMedicamentos","ListasInstrumentos","ListEnfermeras",
+    "Materiales","Medicamentos","Meds","Nominas","Pedidos",
+    "PedidosDeMateriales","PedidosMateriales","PedidosMedicamentos","PedidosMedicos","PedidosMeds",
+    "Presupuesto","Presupuestos","ResumensDeCasos","TurnosEnfermeros","TurnosMeds",
 )
 
 
