@@ -6,36 +6,12 @@ import random
 CURRENT_DIR = pathlib.Path().resolve()
 
 materias = (
-    'POO',
-    'Labs_POO',
-    'Telecomunicaciones1',
-    'Telecomunicaciones2',
-    'Telecomunicaciones3',
-    'Telecomunicaciones4',
-    'lab_Tele3',
-    'lab_Tele4',
-    'lab_Tele1',
-    'lab_Tele2',
-    'Programacion1',
-    'Lab_Progra1',
-    'IngenierriaaSocial',
-    'SistemasOperativaos',
-    'SeguridadDesarrolloSsoftware',
-    'SegBasesDatos',
-    'BasesDatos',
-    'LabBD',
-    'SEGA',
-    'LabSEGA',
-    'Coco',
-    'Criptografia',
-    'DiseñoArquitecturas',
-    'NTSI',
-    'SegCompNube',
-    'CompForenseAbogados',
-    'DiseOrientadoObjetos',
-    'labDOO',
-    'TopicosTecnologias1',
-    'TopicosTecnologias2'
+    "HistoriasClinicas","ResumensDeCasos","Pedidos",
+    "ListaMedica","Medicamentos","Antibioticos",
+    "FormatoHist.Clinica","ListaEstServicioSoc","Estudiantes",
+    "ListEnfermeras","Nominas","Presupuestos",
+    "ListadoHerramientas","ListasInstrumentos","PedidosMeds",
+    "PedidosMateriales","Materiales"
 )
 
 
