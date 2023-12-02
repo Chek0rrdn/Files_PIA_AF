@@ -1,24 +1,21 @@
 # Universidad Autónoma de Nuevo León
 
-## **Facultad de Ciencias Fisicas Matemáticas** 
+## Facultad de Ciencias Físico-Matemáticas
 
-
-- **Materia:** Análisis Forense
+- **Materia:** Análisis Forense / Cómputo Forense
 - **Nombre:** Edgar Pérez
 
-Scripts para la creación de archivos del proyecto de la materia de Análisis Forense.
-Los archivos creados en este proyecto se generan de manera aleatoria con la finalidad de no repetir nombres entre ellos.
-
+Scripts para la creación de archivos del proyecto de la materia de Análisis Forense. Los archivos creados en este proyecto se generan de manera aleatoria con el objetivo de evitar la repetición de nombres entre ellos.
 
 ## Descripción
 
-Breve descripccion de los scripts.
+Breve descripción de los scripts.
 
 | Tipos de Archivos Creados | Función del Script |
-| ------ | ------ |
-| Ofiice | Con los scripts creados se crean de manera automática archivos con nombres aleatorios con formato de Office (.docx, .xlsx, .pptx). |
-| Carpetas | Se crean carpteas con nombres predeterminados, ademas de carpettas ocultas de manera aleatoria dentro de las carpetas creadas anteriormente. |
-| Imágenes | Usando imagenes base (.jpg y .png), se crean copias de dichas imagenes para completar la cantidad de imagenes solicitadas. |
-| Videos | Usando videos base (.mp4 y .mov), se crean la cantidad de videos solicitdos cortando el video en base en varios videos. |
-| Ordenamiento de Archivos | Una vez obtenidos los archivos con la herramienta de recuperación, hacemos un script que nos cree las carpetas con el nombre del tipo de archivo encontrado para posteriormente mover los archivos dentro de estas carpetas. |
-| Creación de Archivos Txt | Se crean archivos de tipo txt con informacion y un nombre aleatorio. |
+| -------------------------- | ------------------- |
+| Office                     | Creación automática de archivos con nombres aleatorios en formato Office (.docx, .xlsx, .pptx). |
+| Carpetas                   | Creación de carpetas con nombres predeterminados, además de carpetas ocultas de manera aleatoria dentro de las carpetas creadas anteriormente. |
+| Imágenes                   | Utilización de imágenes base (.jpg y .png) para generar copias y completar la cantidad de imágenes solicitadas. |
+| Videos                     | Empleo de videos base (.mp4 y .mov) para crear la cantidad de videos solicitados, cortando el video en base a varios fragmentos. |
+| Ordenamiento de Archivos   | Después de obtener los archivos con la herramienta de recuperación, se utiliza un script para crear carpetas con el nombre del tipo de archivo encontrado y posteriormente mover los archivos dentro de estas carpetas. |
+| Creación de Archivos Txt   | Generación de archivos de tipo txt con información y un nombre aleatorio. |
